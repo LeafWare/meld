@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Dracula for Meld. https://github.com/dracula/meld
+  Built from the Dracula Specification: https://draculatheme.com/spec
+  Copyright (c) 2026 LeafWare. MIT License.
+-->
+<style-scheme id="dracula" name="Dracula" version="1.0">
+  <author>LeafWare</author>
+  <description>A dark theme for Meld</description>
+
+  <!-- Dracula Classic palette -->
+  <color name="background"   value="#282A36"/>
+  <color name="current-line" value="#6272A4"/>
+  <color name="selection"    value="#44475A"/>
+  <color name="foreground"   value="#F8F8F2"/>
+  <color name="comment"      value="#6272A4"/>
+  <color name="red"          value="#FF5555"/>
+  <color name="orange"       value="#FFB86C"/>
+  <color name="yellow"       value="#F1FA8C"/>
+  <color name="green"        value="#50FA7B"/>
+  <color name="cyan"         value="#8BE9FD"/>
+  <color name="purple"       value="#BD93F9"/>
+  <color name="pink"         value="#FF79C6"/>
+
+  <!-- UI palette -->
+  <color name="bg-lighter"   value="#424450"/>
+  <color name="bg-light"     value="#343746"/>
+  <color name="bg-dark"      value="#21222C"/>
+  <color name="bg-darker"    value="#191A21"/>
+
+  <!-- Editor -->
+  <style name="text"                      foreground="foreground" background="background"/>
+  <style name="selection"                 background="selection"/>
+  <style name="selection-unfocused"       background="#rgba(68, 71, 90, 0.6)"/>
+  <style name="current-line"              background="#rgba(98, 114, 164, 0.3)"/>
+  <style name="current-line-number"       background="#rgba(98, 114, 164, 0.3)" foreground="foreground" bold="false"/>
+  <style name="line-numbers"              foreground="comment" background="background"/>
+  <style name="cursor"                    foreground="foreground"/>
+  <style name="secondary-cursor"          foreground="comment"/>
+  <style name="bracket-match"             background="#rgba(248, 248, 242, 0.12)" bold="true"/>
+  <style name="bracket-mismatch"          foreground="red" bold="true" underline="single"/>
+  <style name="search-match"              foreground="foreground" background="#rgba(255, 184, 108, 0.4)"/>
+  <style name="right-margin"              foreground="comment" background="#rgba(98, 114, 164, 0.1)"/>
+  <style name="draw-spaces"               foreground="#rgba(98, 114, 164, 0.5)"/>
+  <style name="background-pattern"        background="#rgba(66, 68, 80, 0.25)"/>
+  <style name="map-overlay"               background="#rgba(98, 114, 164, 0.4)"/>
+
+  <!-- Comments -->
+  <style name="def:comment"               foreground="comment" italic="true"/>
+  <style name="def:doc-comment"           foreground="comment" italic="true"/>
+  <style name="def:doc-comment-element"   foreground="comment" italic="true" bold="true"/>
+  <style name="def:shebang"               foreground="comment" italic="true"/>
+  <style name="def:note"                  foreground="comment" italic="true" bold="true"/>
+
+  <!-- Keywords and storage -->
+  <style name="def:keyword"               foreground="pink"/>
+  <style name="def:statement"             foreground="pink"/>
+  <style name="def:reserved"              foreground="pink"/>
+  <style name="def:preprocessor"          foreground="pink"/>
+  <style name="def:operator"              foreground="pink"/>
+
+  <!-- Functions and methods -->
+  <style name="def:function"              foreground="green"/>
+
+  <!-- Classes, types, support and built-ins -->
+  <style name="def:type"                  foreground="cyan"/>
+  <style name="def:builtin"               foreground="cyan"/>
+
+  <!-- Strings and text -->
+  <style name="def:string"                foreground="yellow"/>
+  <style name="def:character"             foreground="yellow"/>
+  <style name="def:special-char"          foreground="yellow"/>
+
+  <!-- Numbers and constants -->
+  <style name="def:number"                foreground="orange"/>
+  <style name="def:decimal"               foreground="orange"/>
+  <style name="def:floating-point"        foreground="orange"/>
+  <style name="def:base-n-integer"        foreground="orange"/>
+  <style name="def:complex"               foreground="orange"/>
+  <style name="def:boolean"               foreground="orange"/>
+  <style name="def:special-constant"      foreground="orange"/>
+  <style name="def:constant"              foreground="orange"/>
+
+  <!-- Variables and identifiers -->
+  <style name="def:identifier"            foreground="foreground"/>
+
+  <!-- Errors and warnings -->
+  <style name="def:error"                 foreground="red"/>
+  <style name="def:warning"               foreground="red"/>
+
+  <!-- Markup -->
+  <style name="def:heading"               foreground="purple" bold="true"/>
+  <style name="def:emphasis"              italic="true"/>
+  <style name="def:strong-emphasis"       bold="true"/>
+  <style name="def:underlined"            underline="single"/>
+  <style name="def:inline-code"           foreground="green"/>
+  <style name="def:preformatted-section"  foreground="foreground"/>
+  <style name="def:thematic-break"        foreground="comment"/>
+  <style name="def:list-marker"           foreground="cyan"/>
+  <style name="def:link-text"             foreground="pink"/>
+  <style name="def:link-symbol"           foreground="foreground"/>
+  <style name="def:link-destination"      foreground="cyan" underline="single"/>
+  <style name="def:net-address"           foreground="cyan" underline="single"/>
+  <style name="def:insertion"             foreground="green"/>
+  <style name="def:deletion"              foreground="red"/>
+
+  <!-- JavaScript and TypeScript -->
+  <style name="js:built-in-function"      foreground="green"/>
+  <style name="js:built-in-property"      foreground="cyan"/>
+  <style name="js:regex"                  foreground="cyan"/>
+  <style name="js:regex-class"            foreground="cyan"/>
+  <style name="js:regex-group"            foreground="cyan"/>
+  <style name="js:regex-flag"             foreground="orange"/>
+  <style name="js:template-placeholder"   foreground="pink"/>
+
+  <!-- Python -->
+  <style name="python:special-variable"   foreground="purple" italic="true"/>
+  <style name="python:class-name"         foreground="cyan"/>
+  <style name="python:builtin-function"   foreground="green"/>
+  <style name="python:decorator"          foreground="comment" italic="true"/>
+
+  <!-- Ruby -->
+  <style name="ruby:special-variable"     foreground="purple" italic="true"/>
+  <style name="ruby:attribute-definition" foreground="green"/>
+  <style name="ruby:symbol"               foreground="orange"/>
+  <style name="ruby:regex"                foreground="cyan"/>
+
+  <!-- Rust -->
+  <style name="rust:self"                 foreground="purple" italic="true"/>
+  <style name="rust:macro"                foreground="green"/>
+  <style name="rust:attribute"            foreground="comment" italic="true"/>
+  <style name="rust:lifetime"             foreground="orange" italic="true"/>
+
+  <!-- Go -->
+  <style name="go:builtin-function"       foreground="green"/>
+
+  <!-- Java -->
+  <style name="java:declaration"          foreground="pink"/>
+  <style name="java:storage-class"        foreground="pink"/>
+  <style name="java:scope-declaration"    foreground="pink"/>
+
+  <!-- Shell -->
+  <style name="sh:variable"               foreground="foreground"/>
+  <style name="sh:common-command"         foreground="green"/>
+  <style name="sh:others"                 foreground="pink"/>
+
+  <!-- CSS -->
+  <style name="css:property-name"         foreground="cyan"/>
+  <style name="css:custom-property-name"  foreground="foreground"/>
+  <style name="css:keyword"               foreground="pink"/>
+  <style name="css:at-rule"               foreground="pink"/>
+  <style name="css:function"              foreground="green"/>
+  <style name="css:id-selector"           foreground="green"/>
+  <style name="css:class-selector"        foreground="green"/>
+  <style name="css:type-selector"         foreground="pink"/>
+  <style name="css:pseudo-selector"       foreground="pink"/>
+  <style name="css:selector-symbol"       foreground="pink"/>
+  <style name="css:color"                 foreground="orange"/>
+  <style name="css:number"                foreground="orange"/>
+  <style name="css:integer"               foreground="orange"/>
+  <style name="css:dimension"             foreground="orange"/>
+  <style name="css:vendor-specific"       foreground="comment"/>
+
+  <!-- XML and HTML -->
+  <style name="xml:element-name"          foreground="cyan"/>
+  <style name="xml:attribute-name"        foreground="cyan"/>
+  <style name="xml:attribute-value"       foreground="yellow"/>
+  <style name="xml:entity"                foreground="orange"/>
+  <style name="xml:doctype"               foreground="comment" italic="true"/>
+  <style name="xml:cdata-delim"           foreground="comment"/>
+  <style name="xml:processing-instruction" foreground="comment"/>
+  <style name="xml:tag"                   foreground="foreground"/>
+
+  <!-- YAML and JSON -->
+  <style name="yaml:map-key"              foreground="cyan"/>
+  <style name="yaml:anchor"               foreground="purple"/>
+  <style name="yaml:alias"                foreground="purple"/>
+  <style name="yaml:tag"                  foreground="pink"/>
+  <style name="yaml:directive"            foreground="comment" italic="true"/>
+  <style name="json:keyname"              foreground="cyan"/>
+
+  <!-- Diff files -->
+  <style name="diff:added-line"           foreground="green"/>
+  <style name="diff:removed-line"         foreground="red"/>
+  <style name="diff:changed-line"         foreground="cyan"/>
+  <style name="diff:location"             foreground="purple" bold="true"/>
+  <style name="diff:diff-file"            foreground="pink" bold="true"/>
+  <style name="diff:special-case"         foreground="orange"/>
+
+  <!-- Meld diff chunks: green added, red removed, cyan changed, orange conflict.
+       Meld draws one-sided lines with "insert" on both panes; "delete" is used in
+       the folder and version control views. Tints match dracula/visual-studio-code. -->
+  <style name="meld:insert"   background="#rgba(80, 250, 123, 0.125)"  foreground="green"  line-background="#rgba(80, 250, 123, 0.5)"/>
+  <style name="meld:delete"   background="#rgba(255, 85, 85, 0.31)"    foreground="red"    line-background="#rgba(255, 85, 85, 0.5)"/>
+  <style name="meld:replace"  background="#rgba(139, 233, 253, 0.125)" foreground="cyan"   line-background="#rgba(139, 233, 253, 0.5)"/>
+  <style name="meld:conflict" background="#rgba(255, 184, 108, 0.25)"  foreground="orange" line-background="#rgba(255, 184, 108, 0.5)"/>
+  <style name="meld:error"    background="#rgba(255, 85, 85, 0.25)"    foreground="red"    line-background="#rgba(255, 85, 85, 0.5)"/>
+  <style name="meld:inline"   background="#rgba(248, 248, 242, 0.18)"/>
+  <style name="meld:current-line-highlight"  foreground="foreground" background="#rgba(98, 114, 164, 0.3)"/>
+  <style name="meld:current-chunk-highlight" background="#rgba(248, 248, 242, 0.05)"/>
+  <style name="meld:unknown-text"     foreground="comment"/>
+  <style name="meld:syncpoint-outline" foreground="purple"/>
+  <style name="meld:dimmed"           foreground="comment"/>
+  <style name="meld:overscroll"       background="#rgba(68, 71, 90, 0.5)"/>
+</style-scheme>
